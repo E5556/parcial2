@@ -41,9 +41,12 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
-      # Compile Kotlin code
+      # Compile Kotlin code # Concede permisos de ejecución a gradlew
       - name: Compile Kotlin code
-        run: ./gradlew build
+        run: |
+          chmod +x ./gradlew  
+          ./gradlew build
+
 
       # Run tests
       - name: Run tests
