@@ -5,6 +5,9 @@ import android.view.View
 import android.widget.EditText
 import com.example.parcial2.R
 
+
+
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
